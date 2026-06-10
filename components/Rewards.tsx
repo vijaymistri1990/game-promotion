@@ -23,20 +23,20 @@ export default function Rewards() {
 
   // Tabs configurations
   const tabs = [
-    { id: "referral", label: "Referral Bonus", icon: <Users className="w-5 h-5" /> },
+    { id: "referral", label: "Agent Rewards", icon: <Users className="w-5 h-5" /> },
     { id: "daily", label: "Daily Streaks", icon: <Gift className="w-5 h-5" /> },
-    { id: "tournament", label: "Tournaments", icon: <Trophy className="w-5 h-5" /> },
+    { id: "tournament", label: "IPL Benefits", icon: <Trophy className="w-5 h-5" /> },
   ];
 
   // Daily Rewards Day card layout
   const dailyStreak = [
     { day: "Day 1", reward: "500 Credits", claimed: true, glow: false },
     { day: "Day 2", reward: "1,200 Credits", claimed: true, glow: false },
-    { day: "Day 3", reward: "Laser Sight", claimed: false, glow: false },
+    { day: "Day 3", reward: "Deposit Bonus", claimed: false, glow: false },
     { day: "Day 4", reward: "2,000 Credits", claimed: false, glow: false },
-    { day: "Day 5", reward: "Cyber Implant", claimed: false, glow: false },
+    { day: "Day 5", reward: "Cashback", claimed: false, glow: false },
     { day: "Day 6", reward: "5,000 Credits", claimed: false, glow: false },
-    { day: "Day 7", reward: "Legendary Skin", claimed: false, glow: true },
+    { day: "Day 7", reward: "Mega Bonus", claimed: false, glow: true },
   ];
 
   return (
@@ -47,10 +47,10 @@ export default function Rewards() {
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
           <span className="text-xs font-mono uppercase tracking-[0.3em] text-neon-pink mb-3">
-            In-game Loot
+            Agent Rewards
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white">
-            CLAIM YOUR SPECIAL <span className="text-neon-cyan">REWARDS</span>
+            2023 AGENT <span className="text-neon-cyan">REWARDS</span>
           </h2>
           <div className="w-16 h-1 bg-neon-cyan mt-4 rounded" />
         </div>
@@ -90,10 +90,10 @@ export default function Rewards() {
               >
                 <div className="lg:col-span-7 space-y-6">
                   <h3 className="text-2xl md:text-3xl font-extrabold font-mono text-white uppercase">
-                    RECRUIT YAKUZAS. EARN CREDITS.
+                    INVITE PLAYERS. EARN REWARDS.
                   </h3>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                    Invite your squad to download IV7.COM. For every recruit that reaches level 5, you receive <span className="text-neon-cyan font-bold">2,500 Cyber-Credits</span> and progress toward legendary character skins. Your friends get a 2x XP booster!
+                    Invite your friends to download IV7. Over <span className="text-neon-cyan font-bold">$1,000,000,000</span> has been distributed in agent rewards! For every referral, you earn generous commissions and help grow our global community.
                   </p>
 
                   {/* Referral Code Copy Section */}
@@ -122,7 +122,7 @@ export default function Rewards() {
                   {/* Referral tiers progress bars */}
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs font-mono text-gray-400">
-                      <span>3 RECRUITS (XP BOOSTER)</span>
+                      <span>3 REFERRALS (BASIC AGENT)</span>
                       <span className="text-neon-cyan font-bold">COMPLETED</span>
                     </div>
                     <div className="h-2 w-full bg-cyber-dark rounded-full overflow-hidden border border-gray-800">
@@ -132,7 +132,7 @@ export default function Rewards() {
 
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs font-mono text-gray-400">
-                      <span>5 RECRUITS (NEON WEAPON SKIN)</span>
+                      <span>50 REFERRALS (PRO AGENT)</span>
                       <span className="text-neon-pink font-bold">80%</span>
                     </div>
                     <div className="h-2 w-full bg-cyber-dark rounded-full overflow-hidden border border-gray-800">
@@ -142,7 +142,7 @@ export default function Rewards() {
 
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs font-mono text-gray-400">
-                      <span>10 RECRUITS (CYBER REAPER AVATAR)</span>
+                      <span>100+ REFERRALS (MASTER AGENT)</span>
                       <span className="text-gray-500 font-bold">40%</span>
                     </div>
                     <div className="h-2 w-full bg-cyber-dark rounded-full overflow-hidden border border-gray-800">
@@ -164,10 +164,10 @@ export default function Rewards() {
               >
                 <div className="text-center lg:text-left space-y-2">
                   <h3 className="text-2xl font-extrabold font-mono text-white uppercase">
-                    DAILY NEURAL DATA INJECTIONS
+                    DAILY PLATFORM BONUSES
                   </h3>
                   <p className="text-gray-400 text-sm max-w-2xl leading-relaxed">
-                    Log in every day to claim bonus loot crates and weapon skins. Missing a single day resets your streak node progress. Inject neural data now!
+                    Log in every day to claim exclusive platform bonuses and rewards. Missing a single day resets your streak progress. Claim your rewards now!
                   </p>
                 </div>
 
@@ -210,18 +210,18 @@ export default function Rewards() {
               >
                 <div className="space-y-6 flex flex-col justify-center">
                   <h3 className="text-2xl md:text-3xl font-extrabold font-mono text-white uppercase">
-                    ARENA TOURNAMENTS
+                    EXCLUSIVE IPL BENEFITS
                   </h3>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                    Compete in weekly Syndicate brackets to climb leaderboards. Win real money prizes, cyber gear, and rare weapons. Pre-register for the upcoming <span className="text-neon-pink font-bold">Championship League</span>.
+                    The league is igniting passion in India! Join now during breaks from watching the games, enjoy relaxing entertainment with millions of fans, and reap double the rewards.
                   </p>
 
                   <div className="flex gap-4">
                     <a
-                      href="#download"
+                      href="/#download"
                       className="px-6 py-3 font-mono font-bold uppercase text-black bg-neon-pink hover:bg-[#ff0055] transition-all rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-neon-pink/15"
                     >
-                      REGISTER TEAM
+                      CLAIM BENEFITS
                     </a>
                   </div>
                 </div>
@@ -234,12 +234,12 @@ export default function Rewards() {
                         <Trophy className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="font-mono font-bold text-white text-sm uppercase">CYBER-CUP 2026</h4>
-                        <p className="text-xs text-gray-500">Prize Pool: $25,000 USD</p>
+                        <h4 className="font-mono font-bold text-white text-sm uppercase">IPL FAN REWARD</h4>
+                        <p className="text-xs text-gray-500">Prize Pool: 1,000,000+ Credits</p>
                       </div>
                     </div>
                     <span className="text-xs font-mono text-neon-cyan font-bold bg-neon-cyan/10 border border-neon-cyan/20 px-2 py-1 rounded">
-                      STARTS IN 2D
+                      LIMITED TIME
                     </span>
                   </div>
 
@@ -249,8 +249,8 @@ export default function Rewards() {
                         <Trophy className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="font-mono font-bold text-white text-sm uppercase">SLUM DISTRICT MELEE</h4>
-                        <p className="text-xs text-gray-500">Prize Pool: Rare Weapon Chests</p>
+                        <h4 className="font-mono font-bold text-white text-sm uppercase">MATCH DAY BONUS</h4>
+                        <p className="text-xs text-gray-500">Prize Pool: Double Deposit Bonus</p>
                       </div>
                     </div>
                     <span className="text-xs font-mono text-neon-pink font-bold bg-neon-pink/10 border border-neon-pink/20 px-2 py-1 rounded">

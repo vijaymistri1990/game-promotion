@@ -66,7 +66,7 @@ export default function Hero() {
           className="mb-4 px-4 py-1.5 glass-panel rounded-full text-xs font-mono uppercase tracking-widest text-neon-cyan flex items-center gap-2"
         >
           <span className="w-2 h-2 rounded-full bg-neon-pink animate-pulse" />
-          Pre-Season Alpha Live
+          IPL Exclusive Benefits Live
         </motion.div>
 
         {/* Game Title Logo */}
@@ -92,7 +92,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl text-gray-300 text-lg md:text-xl mb-10 leading-relaxed font-sans"
         >
-          Inject neural implants, forge high-tech energy weapons, and dominate the dark, neon-drenched grid. The future of tactical RPG combat is here.
+          Join IV7, a rising star in the tech industry since 2023. Enjoy 1,000+ high-quality fair play games, exclusive IPL benefits, 24/7 active support, and earn rewards with millions of fans across South Asia and beyond.
         </motion.p>
 
         {/* Call-to-Action Buttons */}
@@ -137,7 +137,7 @@ export default function Hero() {
               }}
             />
             <Download className="w-5 h-5 relative z-10 animate-bounce" />
-            <span className="relative z-10">Download Game</span>
+            <span className="relative z-10">Download</span>
           </motion.a>
         </motion.div>
       </div>

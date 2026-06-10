@@ -11,24 +11,24 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "What platforms is IV7.COM: Neon Reckoning available on?",
-    answer: "IV7.COM is currently available for iOS and Android mobile platforms. We offer full cross-play and cross-progression, meaning you can play with friends on either platform and access your progress by logging into your unified neural account.",
+    question: "What platforms is IV7 available on?",
+    answer: "IV7 is currently available for iOS and Android mobile platforms. You can also play directly on the web via our official site with full cross-progression.",
   },
   {
-    question: "Is IV7.COM: Neon Reckoning free to play?",
-    answer: "Yes, IV7.COM: Neon Reckoning is completely free to play. Players can download and play the full game without paying. Optional in-game purchases are purely cosmetic weapon skins, badges, and avatar modifications, meaning there are no pay-to-win mechanics.",
+    question: "Is IV7 safe to play?",
+    answer: "Yes, IV7 is completely safe. We hold international certifications for a secure and fair gaming environment. Your data and deposits are fully protected by advanced anti-cheat and security systems.",
   },
   {
-    question: "How do I participate in weekly Syndicate Tournaments?",
-    answer: "Weekly tournaments are held inside the app. To register, form a team of up to four players and register in the 'Tournaments' tab under the game dashboard before Thursday midnight. Winning teams get real credits, gear, and entry into the Seasonal Pro brackets.",
+    question: "How do I claim IPL rewards?",
+    answer: "During breaks from watching cricket matches, simply log in to IV7 to claim your exclusive IPL benefits directly from the Agent Rewards or Events dashboard.",
   },
   {
-    question: "What are the requirements to run the game on Android?",
-    answer: "For Android, you need Android 13 or higher. The minimum requirement is 8GB RAM with a Snapdragon 8 Gen 1 processor (or equivalent). For the best experience at 60 FPS (with ray-tracing enabled), we recommend 12GB RAM and Snapdragon 8 Gen 2 or newer.",
+    question: "What is the Agent Rewards program?",
+    answer: "Our Agent Rewards program is a highly lucrative referral system. Over $1,000,000,000 has been distributed! You earn generous commissions for referring friends to play on IV7.",
   },
   {
-    question: "Can I transfer my account progress between Apple and Google?",
-    answer: "Absolutely. When you launch the game, link your progress to a unified 'Neural net' account. This secures your weapon armory, custom implants, currency, and skins across both Apple and Google devices.",
+    question: "Are the games fair?",
+    answer: "Absolutely. We pride ourselves on Certified Fairness. All our 1,000+ games and self-developed hits use certified Random Number Generators (RNG) that are externally audited.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function FAQ() {
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
           <span className="text-xs font-mono uppercase tracking-[0.3em] text-neon-cyan mb-3">
-            Hacker Support
+            Player Support
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white">
             FREQUENTLY ASKED <span className="text-neon-pink">ANSWERS</span>

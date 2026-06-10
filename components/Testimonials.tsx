@@ -14,31 +14,31 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "PHANTOM_NET",
-    tag: "@phantom_net_stream",
-    avatar: "CN",
-    review: "The visual fidelity is absolutely insane. Best cyberpunk aesthetics I've seen in a mobile RPG. Combats are quick, tactical, and highly addictive. The implant system changed my playstyle completely.",
+    name: "RAHUL_K",
+    tag: "@rahul_plays",
+    avatar: "RK",
+    review: "The platform integration is absolutely insane. Best high-quality games I've seen on a mobile app. The cricket features are quick, and the certified fairness makes me feel completely secure.",
     rating: 5,
   },
   {
-    name: "REAPER_V",
-    tag: "@reaper_v_pro",
-    avatar: "RV",
-    review: "Referrals gave me legendary skins for free. Running co-op raids with my squad has never been this smooth. Netcode is amazing, and I get zero delays during matchmaking lobbies.",
+    name: "VIKRAM_PRO",
+    tag: "@vikram_pro",
+    avatar: "VP",
+    review: "The agent rewards gave me huge commissions for referring my friends. Running games with my squad has never been this smooth. Customer support is amazing, 24/7 active resolution.",
     rating: 5,
   },
   {
-    name: "ALPHA_SPECTRE",
-    tag: "@alpha_spectre_gg",
-    avatar: "AS",
-    review: "I spent 4 hours straight on character customization. The implant skill nodes allow for insane speed-blitz builds. The developers actually listen to the alpha testing feedback.",
+    name: "ANJALI_GG",
+    tag: "@anjali_gg",
+    avatar: "AG",
+    review: "I spent 4 hours straight on the live events. The IPL exclusive benefits allow for insane bonuses during match breaks. The team actually listens to community feedback.",
     rating: 5,
   },
   {
-    name: "CYBER_QUEEN",
-    tag: "@cyberqueen_rts",
-    avatar: "CQ",
-    review: "The weekly tournaments are tense and rewarding. Our Syndicate dominated this week's slum district map and won high-tier epic loot chests. 10/10 gameplay loop.",
+    name: "SNEHA_RTS",
+    tag: "@sneha_rts",
+    avatar: "SR",
+    review: "The global reach is real. I match with players across South Asia instantly. The big data analytics ensure I always get games recommended that I love. 10/10 platform.",
     rating: 5,
   },
 ];
@@ -82,10 +82,10 @@ export default function Testimonials() {
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
           <span className="text-xs font-mono uppercase tracking-[0.3em] text-neon-pink mb-3">
-            Squad Intel
+            Player Reviews
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white">
-            COMMUNITY <span className="text-neon-cyan">RECON</span>
+            COMMUNITY <span className="text-neon-cyan">FEEDBACK</span>
           </h2>
           <div className="w-16 h-1 bg-neon-cyan mt-4 rounded" />
         </div>

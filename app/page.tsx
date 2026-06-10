@@ -32,7 +32,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "IV7 Gaming Platform",
-    "operatingSystem": "iOS 16.0 or higher, Android 13 or higher",
+    "operatingSystem": "iOS 12.0 or higher, Android 8.0 or higher",
     "applicationCategory": "GameApplication",
     "genre": "Global Gaming Hub",
     "screenshot": [

@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import { 
-  Zap, 
-  Cpu, 
-  Crosshair, 
+  Shield, 
+  Headset, 
+  Lock, 
   Globe, 
-  Sliders, 
-  Users 
+  BarChart, 
+  Gamepad2 
 } from "lucide-react";
 
 interface FeatureCardProps {
@@ -59,39 +59,39 @@ function FeatureCard({ icon, title, description, neonColor }: FeatureCardProps) 
 export default function Features() {
   const featureList = [
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Ray-Traced Visuals",
-      description: "Experience the dystopian underbelly in photorealistic detail. Powered by advanced Unreal Engine global illumination and real-time reflections.",
+      icon: <Shield className="w-8 h-8" />,
+      title: "Certified Fairness",
+      description: "International certifications ensure a secure and fair gaming environment. Play with confidence.",
       neonColor: "cyan" as const,
     },
     {
-      icon: <Cpu className="w-8 h-8" />,
-      title: "Neural Implants",
-      description: "Customize your playstyle by injecting state-of-the-art cybernetic mods. Increase reflex speeds, trigger energy shields, or hack hostile systems.",
+      icon: <Headset className="w-8 h-8" />,
+      title: "Professional Support",
+      description: "Experience 365-day, 24/7 active monitoring and instant issue resolution by our dedicated team.",
       neonColor: "pink" as const,
     },
     {
-      icon: <Crosshair className="w-8 h-8" />,
-      title: "Tactical Gunplay",
-      description: "Engage in lethal, precision shooter mechanics. Choose from plasma rifles, smart bullets, and melee energy katanas with tactile feedbacks.",
+      icon: <Lock className="w-8 h-8" />,
+      title: "Advanced Anti-Cheat",
+      description: "Secure client protection, comprehensive anti-hacking systems, and robust network stability.",
       neonColor: "cyan" as const,
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Real-Time PVP Lobbies",
-      description: "Fight alongside corporate Syndicates in global multiplayer matchmaking. Fast servers and sub-10ms netcode guarantee zero delays.",
+      title: "Global Reach",
+      description: "Expanding rapidly across South Asia, Southeast Asia, South America, and beyond with localized player insights.",
       neonColor: "pink" as const,
     },
     {
-      icon: <Sliders className="w-8 h-8" />,
-      title: "Deep Armory Customizer",
-      description: "Fine-tune over 80 stats on your weapons. Attach scope holograms, adjust recoil stabilizers, or customize skin neon frequencies.",
+      icon: <BarChart className="w-8 h-8" />,
+      title: "Big Data Analytics",
+      description: "Regular player behavior analysis empowers us to provide optimized and personalized services.",
       neonColor: "cyan" as const,
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Syndicate Faction Wars",
-      description: "Pledge allegiance to either high-tech megacorporations or decentralized hacker rebellions to dominate territorial map resources.",
+      icon: <Gamepad2 className="w-8 h-8" />,
+      title: "Self-Developed Games",
+      description: "Over a dozen high-quality exclusive games, plus 1,000+ platform-integrated experiences for endless fun.",
       neonColor: "pink" as const,
     },
   ];
@@ -110,7 +110,7 @@ export default function Features() {
             transition={{ duration: 0.5 }}
             className="text-xs font-mono uppercase tracking-[0.3em] text-neon-pink mb-3"
           >
-            Tactical Enhancements
+            Brand Story
           </motion.div>
           
           <motion.h2
@@ -120,7 +120,7 @@ export default function Features() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white"
           >
-            UPGRADE YOUR <span className="text-neon-cyan">GAMEPLAY</span>
+            WHY CHOOSE <span className="text-neon-cyan">IV7</span>
           </motion.h2>
           
           <motion.div

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AgeNotice from "@/components/AgeNotice";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,6 +79,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#030308] text-gray-100 font-sans selection:bg-[#DF264D] selection:text-white">
         {children}
+        <AgeNotice />
       </body>
     </html>
   );

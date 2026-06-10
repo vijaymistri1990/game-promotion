@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import Image from "next/image";
@@ -15,27 +15,27 @@ interface Screenshot {
 const screenshots: Screenshot[] = [
   {
     src: "/1.jpeg",
-    title: "NEON COMBAT GRID",
-    category: "Action / Combat",
-    desc: "Engage rogue AI drones using high-powered energy weapons. Master dodging and implant tactical cooldowns to survive the arena.",
+    title: "1,000+ PREMIUM GAMES",
+    category: "Platform Integration",
+    desc: "As a rising force in the digital entertainment sector, IV7 offers cutting-edge games. Enjoy a global design vision mixed with localized insights.",
   },
   {
     src: "/2.jpeg",
-    title: "NEON CITY DISTRICT",
-    category: "World Exploration",
-    desc: "Explore high-density districts of Neon City. Interact with black-market dealers, hack security terminals, and scale massive towers.",
+    title: "CRICKET MONEY & IPL",
+    category: "Sports & Live Events",
+    desc: "The league is igniting passion in India! During breaks, come here to enjoy fast-paced entertainment and claim exclusive IPL benefits.",
   },
   {
     src: "/3.jpeg",
-    title: "CYBERNETIC ASSEMBLY DOCK",
-    category: "Customization",
-    desc: "Upgrade implants and configure skill nodes inside the holographic deck. Optimize your build for damage output, shield density, or energy recharge speed.",
+    title: "SELF-DEVELOPED HITS",
+    category: "Exclusive Content",
+    desc: "Dive into over a dozen high-quality self-developed games created exclusively for our platform players worldwide.",
   },
   {
     src: "/4.jpeg",
-    title: "BOSS ARENA SHIELD",
-    category: "Tactical Raid",
-    desc: "Face massive corporate robotic units and mech boss monsters with your squad. Coordinate tactics and use implant cooldown syncs to defeat high-tier foes.",
+    title: "GLOBAL REACH",
+    category: "Worldwide Community",
+    desc: "Join millions of fans across South Asia, Southeast Asia, and South America to reap double the rewards in a secure environment.",
   },
 ];
 
@@ -51,6 +51,14 @@ export default function Gameplay() {
     setCurrentIndex((prev) => (prev === screenshots.length - 1 ? 0 : prev + 1));
   };
 
+  // Auto-slide effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev === screenshots.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const current = screenshots[currentIndex];
 
   return (
@@ -63,58 +71,53 @@ export default function Gameplay() {
         {/* Section Header */}
         <div className="text-center mb-16 flex flex-col items-center">
           <span className="text-xs font-mono uppercase tracking-[0.3em] text-neon-cyan mb-3">
-            In-Engine Gameplay
+            Platform Integration
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white">
-            THE DISTRICTS AWAIT <span className="text-neon-pink">YOU</span>
+            OUR GAMES & <span className="text-neon-pink">FEATURES</span>
           </h2>
           <div className="w-16 h-1 bg-neon-pink mt-4 rounded" />
         </div>
 
         {/* Slider Carousel Wrapper */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Text and description info */}
-          <div className="lg:col-span-4 flex flex-col gap-6">
-            <div className="space-y-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-neon-pink px-2.5 py-1 bg-neon-pink/10 border border-neon-pink/20 rounded-full w-fit block">
-                {current.category}
-              </span>
-              <h3 className="text-2xl md:text-3xl font-extrabold font-mono text-white mt-4 uppercase">
-                {current.title}
-              </h3>
+        <div className="flex flex-col gap-8">
+          
+          {/* Text and description info (Now Above) */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 bg-[#0c0c16]/80 backdrop-blur-sm border border-cyber-border p-6 md:p-8 rounded-lg shadow-lg">
+            <div className="flex-1 space-y-4 text-center md:text-left">
+              <div className="space-y-2">
+                <span className="text-xs font-mono uppercase tracking-widest text-neon-pink px-2.5 py-1 bg-neon-pink/10 border border-neon-pink/20 rounded-full w-fit mx-auto md:mx-0 block">
+                  {current.category}
+                </span>
+                <h3 className="text-2xl md:text-3xl font-extrabold font-mono text-white mt-4 uppercase">
+                  {current.title}
+                </h3>
+              </div>
+              
+              <p className="text-gray-400 leading-relaxed text-sm md:text-base max-w-3xl mx-auto md:mx-0">
+                {current.desc}
+              </p>
             </div>
             
-            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              {current.desc}
-            </p>
-
-            {/* Slider Nav controls */}
-            <div className="flex items-center gap-4 mt-4">
-              <button
-                onClick={prevSlide}
-                className="p-3 bg-cyber-card hover:bg-neon-cyan/20 border border-cyber-border rounded hover:border-neon-cyan transition-all duration-300 text-white cursor-pointer"
-                aria-label="Previous screenshot"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              
-              <div className="font-mono text-sm tracking-widest text-gray-400">
-                <span className="text-neon-cyan font-bold">{currentIndex + 1}</span> / {screenshots.length}
-              </div>
-
-              <button
-                onClick={nextSlide}
-                className="p-3 bg-cyber-card hover:bg-neon-pink/20 border border-cyber-border rounded hover:border-neon-pink transition-all duration-300 text-white cursor-pointer"
-                aria-label="Next screenshot"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
+            {/* Slide Tracker */}
+            <div className="font-mono text-sm tracking-widest text-gray-400 min-w-[60px] text-center shrink-0 mx-auto md:mx-0">
+              <span className="text-neon-cyan font-bold">{currentIndex + 1}</span> / {screenshots.length}
             </div>
           </div>
 
           {/* Interactive Screen Preview */}
-          <div className="lg:col-span-8 relative">
-            <div className="relative aspect-[16/9] w-full rounded-lg overflow-hidden border border-cyber-border group shadow-2xl shadow-black">
+          <div className="w-full relative group/slider">
+            
+            {/* Previous Arrow - Positioned Left */}
+            <button
+              onClick={prevSlide}
+              className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 p-3 bg-[#0c0c16] hover:bg-neon-cyan/20 border border-cyber-border rounded-full hover:border-neon-cyan transition-all duration-300 text-white cursor-pointer shadow-lg hover:scale-110 opacity-0 group-hover/slider:opacity-100 focus:opacity-100"
+              aria-label="Previous screenshot"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            <div className="relative aspect-[16/9] md:aspect-[21/9] w-full rounded-lg overflow-hidden border border-cyber-border group shadow-2xl shadow-black">
               {/* Animation wrapper for slides */}
               <AnimatePresence mode="wait">
                 <motion.div
@@ -129,7 +132,7 @@ export default function Gameplay() {
                     src={current.src}
                     alt={current.title}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 800px"
+                    sizes="100vw"
                     priority
                     className="object-cover object-center"
                   />
@@ -148,6 +151,15 @@ export default function Gameplay() {
               </div>
             </div>
 
+            {/* Next Arrow - Positioned Right */}
+            <button
+              onClick={nextSlide}
+              className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 p-3 bg-[#0c0c16] hover:bg-neon-pink/20 border border-cyber-border rounded-full hover:border-neon-pink transition-all duration-300 text-white cursor-pointer shadow-lg hover:scale-110 opacity-0 group-hover/slider:opacity-100 focus:opacity-100"
+              aria-label="Next screenshot"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
             {/* Carousel dots indicators */}
             <div className="flex justify-center gap-2 mt-6">
               {screenshots.map((_, i) => (
@@ -162,6 +174,7 @@ export default function Gameplay() {
               ))}
             </div>
           </div>
+
         </div>
       </div>
 

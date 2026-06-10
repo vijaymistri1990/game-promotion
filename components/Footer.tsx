@@ -35,7 +35,7 @@ export default function Footer() {
           
           {/* Column 1: Game Pitch & Socials */}
           <div className="lg:col-span-5 space-y-6">
-            <Link href="#home" className="inline-block relative h-10 w-36">
+            <Link href="/#home" className="inline-block relative h-10 w-36">
               <Image
                 src="/logo.png"
                 alt="IV7.COM Logo"
@@ -68,16 +68,16 @@ export default function Footer() {
             <h4 className="font-mono text-sm font-bold uppercase tracking-wider text-white">The Grid</h4>
             <ul className="space-y-3 font-mono text-xs">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-neon-cyan transition-colors">Home Matrix</a>
+                <a href="/#home" className="text-gray-400 hover:text-neon-cyan transition-colors">Home Matrix</a>
               </li>
               <li>
-                <a href="#features" className="text-gray-400 hover:text-neon-cyan transition-colors">Upgrades</a>
+                <a href="/#features" className="text-gray-400 hover:text-neon-cyan transition-colors">Upgrades</a>
               </li>
               <li>
-                <a href="#gameplay" className="text-gray-400 hover:text-neon-cyan transition-colors">Sectors</a>
+                <a href="/#gameplay" className="text-gray-400 hover:text-neon-cyan transition-colors">Sectors</a>
               </li>
               <li>
-                <a href="#rewards" className="text-gray-400 hover:text-neon-cyan transition-colors">Loot Deck</a>
+                <a href="/#rewards" className="text-gray-400 hover:text-neon-cyan transition-colors">Loot Deck</a>
               </li>
             </ul>
           </div>
@@ -121,9 +121,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 text-xs text-gray-500 font-mono">
           <p>© {new Date().getFullYear()} IV7 Gaming. All Rights Reserved.</p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a href="#download" className="hover:text-neon-pink transition-colors">Privacy Policy</a>
-            <a href="#download" className="hover:text-neon-pink transition-colors">Terms of Service</a>
-            <a href="#download" className="hover:text-neon-pink transition-colors">EULA</a>
+            <Link href="/disclaimer" className="hover:text-neon-pink transition-colors">Disclaimer</Link>
+            <a href="/#download" className="hover:text-neon-pink transition-colors">Privacy Policy</a>
+            <a href="/#download" className="hover:text-neon-pink transition-colors">Terms of Service</a>
+            <a href="/#download" className="hover:text-neon-pink transition-colors">EULA</a>
           </div>
         </div>
       </div>
