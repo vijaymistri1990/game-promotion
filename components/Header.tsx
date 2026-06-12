@@ -27,7 +27,7 @@ export default function Header() {
     { name: "Features", href: "/#features" },
     { name: "Gameplay", href: "/#gameplay" },
     { name: "Rewards", href: "/#rewards" },
-    { name: "Download", href: "/#download" },
+    { name: "Download", href: "https://share-rxapq9cajg.iv7.info/share/agent/AA6TPXPF?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0=" },
     { name: "Reviews", href: "/#reviews" },
     { name: "FAQ", href: "/#faq" },
   ];
@@ -71,7 +71,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link
-              href="/#download"
+              href="https://share-rxapq9cajg.iv7.info/share/agent/AA6TPXPF?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0="
               className="relative px-6 py-2.5 font-mono text-sm uppercase font-semibold text-black overflow-hidden group rounded-sm"
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-neon-cyan to-neon-purple transition-all duration-300 group-hover:opacity-90" />
@@ -124,7 +124,7 @@ export default function Header() {
               className="flex flex-col gap-4"
             >
               <Link
-                href="/#download"
+                href="https://share-rxapq9cajg.iv7.info/share/agent/AA6TPXPF?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0="
                 onClick={() => setIsOpen(false)}
                 className="w-full text-center py-4 font-mono uppercase font-bold text-black bg-gradient-to-r from-neon-cyan to-neon-pink rounded"
               >

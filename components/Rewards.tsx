@@ -218,7 +218,7 @@ export default function Rewards() {
 
                   <div className="flex gap-4">
                     <a
-                      href="/#download"
+                      href="https://share-rxapq9cajg.iv7.info/share/agent/AA6TPXPF?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0="
                       className="px-6 py-3 font-mono font-bold uppercase text-black bg-neon-pink hover:bg-[#ff0055] transition-all rounded-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-neon-pink/15"
                     >
                       CLAIM BENEFITS

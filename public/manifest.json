@@ -1,0 +1,37 @@
+{
+  "name": "IV7 Gaming Platform",
+  "short_name": "IV7",
+  "description": "IV7 is the ultimate gaming platform with 1,000+ fair-play games, exclusive IPL benefits, and a billion-dollar referral rewards program.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030308",
+  "theme_color": "#030308",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/1.jpeg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "label": "IV7 Gaming Platform Home"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

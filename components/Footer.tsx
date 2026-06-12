@@ -68,16 +68,25 @@ export default function Footer() {
             <h4 className="font-mono text-sm font-bold uppercase tracking-wider text-white">The Grid</h4>
             <ul className="space-y-3 font-mono text-xs">
               <li>
-                <a href="/#home" className="text-gray-400 hover:text-neon-cyan transition-colors">Home Matrix</a>
+                <a href="/#home" className="text-gray-400 hover:text-neon-cyan transition-colors">Home</a>
               </li>
               <li>
-                <a href="/#features" className="text-gray-400 hover:text-neon-cyan transition-colors">Upgrades</a>
+                <Link href="/features" className="text-gray-400 hover:text-neon-cyan transition-colors">IV7 Features</Link>
               </li>
               <li>
-                <a href="/#gameplay" className="text-gray-400 hover:text-neon-cyan transition-colors">Sectors</a>
+                <Link href="/rewards" className="text-gray-400 hover:text-neon-cyan transition-colors">IV7 Rewards</Link>
               </li>
               <li>
-                <a href="/#rewards" className="text-gray-400 hover:text-neon-cyan transition-colors">Loot Deck</a>
+                <Link href="https://share-rxapq9cajg.iv7.info/share/agent/AA6TPXPF?data=eyJtIjoyLCJsYW5nIjoiZW4iLCJpZCI6MX0=" className="text-gray-400 hover:text-neon-cyan transition-colors">Download IV7</Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-gray-400 hover:text-neon-cyan transition-colors">FAQ</Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-400 hover:text-neon-cyan transition-colors">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-neon-cyan transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
@@ -120,14 +129,16 @@ export default function Footer() {
         {/* Footer Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 text-xs text-gray-500 font-mono">
           <p>© {new Date().getFullYear()} IV7 Gaming. All Rights Reserved.</p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <Link href="/disclaimer" className="hover:text-neon-pink transition-colors">Disclaimer</Link>
-            <a href="/#download" className="hover:text-neon-pink transition-colors">Privacy Policy</a>
-            <a href="/#download" className="hover:text-neon-pink transition-colors">Terms of Service</a>
-            <a href="/#download" className="hover:text-neon-pink transition-colors">EULA</a>
-          </div>
+          <nav aria-label="Legal links">
+            <div className="flex flex-wrap justify-center gap-6">
+              <Link href="/disclaimer" className="hover:text-neon-pink transition-colors">Disclaimer</Link>
+              <Link href="/privacy-policy" className="hover:text-neon-pink transition-colors">Privacy Policy</Link>
+              <Link href="/terms-conditions" className="hover:text-neon-pink transition-colors">Terms of Service</Link>
+            </div>
+          </nav>
         </div>
       </div>
     </footer>
   );
 }
+

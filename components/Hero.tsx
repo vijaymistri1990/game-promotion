@@ -69,21 +69,26 @@ export default function Hero() {
           IPL Exclusive Benefits Live
         </motion.div>
 
-        {/* Game Title Logo */}
-        <motion.div
+        {/* Game Title Logo — wrapped in H1 for SEO */}
+        <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="relative w-72 h-24 md:w-[420px] md:h-36 mb-6 select-none"
+          aria-label="IV7 Game – Official Gaming Platform"
         >
+          {/* Visually hidden SEO H1 text */}
+          <span className="sr-only">
+            IV7 Game – Download IV7 App | Official IV7 Gaming Platform
+          </span>
           <Image
             src="/logo.png"
-            alt="IV7.COM Game Logo"
+            alt="IV7 Game – Official Gaming Platform Logo"
             fill
             priority
             className="object-contain"
           />
-        </motion.div>
+        </motion.h1>
 
         {/* Catchy Headline */}
         <motion.p
