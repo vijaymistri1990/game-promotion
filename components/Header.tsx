@@ -48,6 +48,7 @@ export default function Header() {
                 src="/logo.png"
                 alt="IV7.COM Logo"
                 fill
+                sizes="144px"
                 priority
                 className="object-contain"
               />

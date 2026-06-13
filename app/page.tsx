@@ -7,23 +7,24 @@ import Rewards from "@/components/Rewards";
 import Download from "@/components/Download";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
+import SeoContent from "@/components/SeoContent";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 const SITE_URL = "https://iv7-s.com";
 
 export const metadata: Metadata = {
-  title: "IV7 Game – Official Gaming Platform | Download IV7 App",
+  title: "IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)",
   description:
-    "IV7 is the ultimate gaming platform with 1,000+ fair-play games, exclusive IPL benefits, a billion-dollar IV7 referral rewards program, and 24/7 support. Download the IV7 app now.",
+    "The online gaming industry continues to expand rapidly in 2026. Get the official IV7 Game APK Download, IV7 App, and discover the IV7 New Launch. Experience 1,000+ fair-play games.",
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
     url: SITE_URL,
-    title: "IV7 Game – Official Gaming Platform | Download IV7 App",
+    title: "IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)",
     description:
-      "Join IV7, the leading global gaming platform. Download the IV7 app, enjoy 1,000+ fair-play games, and earn rewards with the IV7 referral program.",
+      "The online gaming industry continues to expand rapidly in 2026. Get the official IV7 Game APK Download, IV7 App, and discover the IV7 New Launch. Experience 1,000+ fair-play games.",
     images: [
       {
         url: "/1.jpeg",
@@ -202,6 +203,7 @@ export default function Home() {
         <Download />
         <Testimonials />
         <FAQ />
+        <SeoContent />
       </main>
 
       <Footer />

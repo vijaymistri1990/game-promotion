@@ -79,7 +79,7 @@ export default function Hero() {
         >
           {/* Visually hidden SEO H1 text */}
           <span className="sr-only">
-            IV7 Game – Download IV7 App | Official IV7 Gaming Platform
+            IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)
           </span>
           <Image
             src="/logo.png"
@@ -89,6 +89,16 @@ export default function Hero() {
             className="object-contain"
           />
         </motion.h1>
+
+        {/* SEO Optimized Visible Sub-Headline */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-2xl md:text-3xl font-extrabold font-mono text-white uppercase mb-4 tracking-wider drop-shadow-md"
+        >
+          IV7 GAME APK DOWNLOAD <span className="text-neon-pink">&amp;</span> IV7 NEW LAUNCH (2026)
+        </motion.h2>
 
         {/* Catchy Headline */}
         <motion.p

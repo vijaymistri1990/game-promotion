@@ -40,6 +40,7 @@ export default function Footer() {
                 src="/logo.png"
                 alt="IV7.COM Logo"
                 fill
+                sizes="144px"
                 className="object-contain"
               />
             </Link>
