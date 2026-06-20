@@ -19,7 +19,7 @@ const SeoContent = () => {
             The market is flooded with unofficial sources, but downloading the <strong>IV7 Game</strong> directly from our official platform guarantees a secure, virus-free, and optimized experience. The 2026 update of the IV7 App brings unprecedented features to your mobile device:
           </p>
           <ul className="list-disc pl-5 space-y-2 mb-3">
-            <li><strong>1,000+ Premium Games:</strong> Access a massive library of self-developed and internationally certified games, all housed within a single lightweight application.</li>
+            <li><strong>1,000+ Premium Games:</strong> Access a massive library of self-developed and internationally certified games, including fan-favorites like Aviator Pro, Dragon Tiger, Teen Patti, and Andar Bahar for real cash.</li>
             <li><strong>Exclusive IPL Benefits:</strong> The new IV7 launch includes tailored rewards and betting features specifically designed for cricket fans and IPL enthusiasts.</li>
             <li><strong>Advanced Anti-Cheat System:</strong> Play with confidence. The IV7 platform utilizes state-of-the-art security protocols to ensure fair play and protect your data.</li>
             <li><strong>Massive Referral Rewards:</strong> Join our billion-dollar agent rewards program directly through the app.</li>

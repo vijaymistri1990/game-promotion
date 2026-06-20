@@ -31,21 +31,24 @@ export const metadata: Metadata = {
     template: "%s | IV7 Official",
   },
   description:
-    "IV7 is the ultimate gaming platform with 1,000+ fair-play games, exclusive IPL benefits, a billion-dollar referral rewards program, and 24/7 support. Download the IV7 app now.",
+    "IV7 is the ultimate gaming platform. Play real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Enjoy exclusive IPL benefits and a billion-dollar rewards program. Download the IV7 app now.",
   keywords: [
     "IV7 Game",
     "IV7 Download",
     "IV7 App",
     "IV7 Rewards",
-    "IV7 Referral Program",
-    "IV7 Official Website",
-    "IV7 Features",
-    "IV7 Gaming Platform",
+    "IV7 Aviator Pro",
+    "IV7 Dragon Tiger",
+    "IV7 Teen Patti",
+    "IV7 Andar Bahar",
+    "IV7 Real Cash",
+    "IV7 Casino",
+    "IV7 India",
     "IV7 APK download",
     "iv7-s.com",
     "IV7 IPL rewards",
     "online gaming platform",
-    "fair play games",
+    "real cash games",
     "agent rewards program",
   ],
   authors: [{ name: "IV7 Gaming", url: SITE_URL }],
@@ -77,7 +80,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "IV7 Game – Official Gaming Platform | Download IV7 App",
     description:
-      "Join IV7, the leading global gaming platform. 1,000+ fair-play games, exclusive IPL benefits, 24/7 support, and earn rewards through our billion-dollar referral program.",
+      "Join IV7, the leading global gaming platform. Play Aviator Pro, Dragon Tiger, and Teen Patti for real cash. Enjoy exclusive IPL benefits and 24/7 support.",
     siteName: "IV7 Official",
     images: [
       {
@@ -95,7 +98,7 @@ export const metadata: Metadata = {
     creator: "@iv7game",
     title: "IV7 Game – Official Gaming Platform | Download IV7 App",
     description:
-      "1,000+ fair-play games, exclusive IPL benefits, and a billion-dollar IV7 referral rewards program. Download the IV7 app now.",
+      "Play top real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Enjoy exclusive IPL benefits. Download the IV7 app now.",
     images: ["/1.jpeg"],
   },
   icons: {
@@ -127,7 +130,7 @@ export default function RootLayout({
     name: "IV7 Official",
     url: SITE_URL,
     description:
-      "IV7 is the ultimate gaming platform. Download the IV7 app, earn referral rewards, and enjoy 1,000+ fair-play games.",
+      "IV7 is the ultimate gaming platform. Download the IV7 app, play real cash games like Aviator Pro and Dragon Tiger, and earn referral rewards.",
     potentialAction: {
       "@type": "SearchAction",
       target: {

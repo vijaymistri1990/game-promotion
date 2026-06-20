@@ -53,7 +53,7 @@ export default function Home() {
       height: 120,
     },
     description:
-      "IV7 is the ultimate gaming platform with 1,000+ fair-play games, exclusive IPL benefits, and a billion-dollar referral rewards program.",
+      "IV7 is the ultimate gaming platform. Play real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Enjoy exclusive IPL benefits and a billion-dollar referral rewards program.",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
@@ -101,7 +101,8 @@ export default function Home() {
       worstRating: "1",
     },
     featureList: [
-      "1000+ Fair Play Games",
+      "Top Games: Aviator Pro, Dragon Tiger, Teen Patti, Andar Bahar",
+      "1000+ Real Cash and Fair Play Games",
       "IV7 Referral Rewards Program",
       "Exclusive IPL Benefits",
       "24/7 Customer Support",
