@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation Links */}
           <div className="lg:col-span-3 space-y-6">
-            <h4 className="font-mono text-sm font-bold uppercase tracking-wider text-white">The Grid</h4>
+            <h3 className="font-mono text-sm font-bold uppercase tracking-wider text-white">The Grid</h3>
             <ul className="space-y-3 font-mono text-xs">
               <li>
                 <a href="/#home" className="text-gray-400 hover:text-neon-cyan transition-colors">Home</a>
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Column 3: Newsletter Subscription */}
           <div className="lg:col-span-4 space-y-6">
-            <h4 className="font-mono text-sm font-bold uppercase tracking-wider text-white">Neural Newsletter</h4>
+            <h3 className="font-mono text-sm font-bold uppercase tracking-wider text-white">Neural Newsletter</h3>
             <p className="text-gray-400 text-xs leading-relaxed">
               Inject news, game updates, patch logs, and tournament details straight to your inbox.
             </p>

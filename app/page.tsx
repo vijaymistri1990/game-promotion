@@ -9,34 +9,69 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import SeoContent from "@/components/SeoContent";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
+import GooglebotDetector from "@/components/GooglebotDetector";
+import VideoGameSchema from "@/components/VideoGameSchema";
 
 const SITE_URL = "https://iv7-s.com";
 
-export const metadata: Metadata = {
-  title: "IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)",
-  description:
-    "The online gaming industry continues to expand rapidly in 2026. Get the official IV7 Game APK Download, IV7 App, and discover the IV7 New Launch. Experience 1,000+ fair-play games.",
-  alternates: {
-    canonical: SITE_URL,
-  },
-  openGraph: {
-    url: SITE_URL,
-    title: "IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)",
-    description:
-      "The online gaming industry continues to expand rapidly in 2026. Get the official IV7 Game APK Download, IV7 App, and discover the IV7 New Launch. Experience 1,000+ fair-play games.",
-    images: [
-      {
-        url: "/1.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "IV7 Gaming Platform – Download & Play Now",
-      },
-    ],
-  },
+type Props = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default function Home() {
+export async function generateMetadata(
+  { searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const resolvedSearchParams = await searchParams;
+  const gameParam = resolvedSearchParams.game;
+  const gameKey =
+    typeof gameParam === "string" ? gameParam.toLowerCase() : null;
+
+  const defaultTitle =
+    "IV7 Game APK Download, IV7 APP & IV7 New Launch (2026Guide)";
+  const defaultDesc =
+    "Get the official IV7 Game APK Download and IV7 App in 2026. Discover the IV7 New Launch and play 1,000+ fair-play real cash games today.";
+
+  let title = defaultTitle;
+  let description = defaultDesc;
+
+  if (gameKey) {
+    const gameName = gameKey
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+    title = `${gameName} | IV7 Game APK Download (2026Guide)`;
+    description = `Play ${gameName} on IV7. ${defaultDesc}`;
+  }
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: SITE_URL,
+    },
+    openGraph: {
+      type: "website",
+      url: gameKey ? `${SITE_URL}?game=${gameKey}` : SITE_URL,
+      title,
+      description,
+      images: [
+        {
+          url: "/1.jpeg",
+          width: 1200,
+          height: 630,
+          alt: "IV7 Gaming Platform – Download & Play Now",
+        },
+      ],
+    },
+  };
+}
+
+export default async function Home(props: Props) {
+  const resolvedSearchParams = await props.searchParams;
+  const gameParam = resolvedSearchParams.game;
+
   // Execute server-side check and copy of the generated image assets
   setupAssets();
 
@@ -175,6 +210,9 @@ export default function Home() {
 
   return (
     <>
+      <GooglebotDetector />
+      <VideoGameSchema gameParam={gameParam} />
+
       {/* Inject SEO Structured Data Schemas */}
       <script
         type="application/ld+json"
@@ -187,10 +225,6 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Landing Page layout structure using semantic HTML5 tags */}

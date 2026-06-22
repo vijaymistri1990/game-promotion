@@ -120,9 +120,9 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-mono font-black text-white text-lg tracking-wider">
+                      <h3 className="font-mono font-black text-white text-lg tracking-wider">
                         {current.name}
-                      </h4>
+                      </h3>
                       <span className="text-xs font-mono text-neon-cyan">{current.tag}</span>
                     </div>
                   </div>

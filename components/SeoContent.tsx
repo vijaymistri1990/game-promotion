@@ -3,7 +3,7 @@ import React from 'react';
 const SeoContent = () => {
   return (
     <section className="relative py-12 bg-[#030308] border-t border-cyber-border/30">
-      <div className="max-w-4xl mx-auto px-6 text-gray-500 text-sm leading-relaxed space-y-6">
+      <div className="max-w-4xl mx-auto px-6 text-gray-400 text-base leading-relaxed space-y-6">
         <div>
           <h2 className="text-xl font-bold text-gray-400 mb-3 uppercase tracking-wider font-mono">
             IV7 Game APK Download: The Ultimate 2026 Guide for the IV7 App

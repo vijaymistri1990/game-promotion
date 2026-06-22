@@ -50,7 +50,7 @@ export default function Rewards() {
             Agent Rewards
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold uppercase font-mono tracking-tight text-white">
-            2023 AGENT <span className="text-neon-cyan">REWARDS</span>
+            2026 AGENT <span className="text-neon-cyan">REWARDS</span>
           </h2>
           <div className="w-16 h-1 bg-neon-cyan mt-4 rounded" />
         </div>
