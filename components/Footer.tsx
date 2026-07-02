@@ -132,6 +132,9 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} IV7 Gaming. All Rights Reserved.</p>
           <nav aria-label="Legal links">
             <div className="flex flex-wrap justify-center gap-6">
+              <Link href="/about" className="hover:text-neon-pink transition-colors">About Us</Link>
+              <Link href="/licenses" className="hover:text-neon-pink transition-colors">Licenses</Link>
+              <Link href="/responsible-gaming" className="hover:text-neon-pink transition-colors">Responsible Gaming</Link>
               <Link href="/disclaimer" className="hover:text-neon-pink transition-colors">Disclaimer</Link>
               <Link href="/privacy-policy" className="hover:text-neon-pink transition-colors">Privacy Policy</Link>
               <Link href="/terms-conditions" className="hover:text-neon-pink transition-colors">Terms of Service</Link>

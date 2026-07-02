@@ -8,13 +8,28 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/", "/static/"],
+        // Blocking sensitive paths and api routes
+        disallow: [
+          "/api/",
+          "/_next/",
+          "/static/",
+          "/admin/",
+          "/checkout/",
+          "/user/dashboard/"
+        ],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/admin/"],
+        crawlDelay: 2,
       },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+        crawlDelay: 2,
+      }
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,

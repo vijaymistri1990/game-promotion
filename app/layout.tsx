@@ -27,35 +27,33 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "IV7 Game – Official Gaming Platform | Download IV7 App",
-    template: "%s | IV7 Official",
+    default: "IV7 Game APK Download – Official Gaming Platform | Play & Earn",
+    template: "%s | IV7 Game APK Download",
   },
   description:
-    "IV7 is the ultimate gaming platform. Play real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Enjoy exclusive IPL benefits and a billion-dollar rewards program. Download the IV7 app now.",
+    "Get the IV7 Game APK Download today. IV7 is the ultimate real cash gaming platform. Play Aviator Pro, Dragon Tiger, and Teen Patti. Win big with our billion-dollar rewards program.",
   keywords: [
+    "IV7 Game APK Download",
+    "IV7 Game Download",
+    "IV7 App Download",
+    "IV7 New Launch",
     "IV7 Game",
-    "IV7 Download",
-    "IV7 App",
     "IV7 Rewards",
+    "IV7 Real Cash App",
+    "Play and Earn",
+    "Real Cash Gaming Platform",
     "IV7 Aviator Pro",
     "IV7 Dragon Tiger",
     "IV7 Teen Patti",
-    "IV7 Andar Bahar",
-    "IV7 Real Cash",
-    "IV7 Casino",
-    "IV7 India",
-    "IV7 APK download",
     "iv7-s.com",
-    "IV7 IPL rewards",
-    "online gaming platform",
-    "real cash games",
+    "online casino India",
     "agent rewards program",
   ],
   authors: [{ name: "IV7 Gaming", url: SITE_URL }],
   creator: "IV7 Gaming",
   publisher: "IV7 Gaming",
   category: "Gaming",
-  classification: "Gaming, Entertainment",
+  classification: "Gaming, Entertainment, Casino",
   applicationName: "IV7",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
@@ -73,21 +71,24 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_URL,
+    languages: {
+      en: SITE_URL,
+    }
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    title: "IV7 Game – Official Gaming Platform | Download IV7 App",
+    title: "IV7 Game APK Download – Official Gaming Platform | Play & Earn",
     description:
-      "Join IV7, the leading global gaming platform. Play Aviator Pro, Dragon Tiger, and Teen Patti for real cash. Enjoy exclusive IPL benefits and 24/7 support.",
+      "Get the IV7 Game APK Download today. Join IV7, the leading global gaming platform. Play Aviator Pro, Dragon Tiger, and Teen Patti for real cash.",
     siteName: "IV7 Official",
     images: [
       {
         url: "/1.jpeg",
         width: 1200,
         height: 630,
-        alt: "IV7 Gaming Platform – Download & Play Now",
+        alt: "IV7 Game APK Download – Play & Earn",
         type: "image/jpeg",
       },
     ],
@@ -96,9 +97,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@iv7game",
     creator: "@iv7game",
-    title: "IV7 Game – Official Gaming Platform | Download IV7 App",
+    title: "IV7 Game APK Download – Official Gaming Platform | Play & Earn",
     description:
-      "Play top real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Enjoy exclusive IPL benefits. Download the IV7 app now.",
+      "Play top real cash games like Aviator Pro, Dragon Tiger, and Teen Patti. Download the IV7 app now and win real cash.",
     images: ["/1.jpeg"],
   },
   icons: {
@@ -127,7 +128,7 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "IV7 Official",
+    name: "IV7 Game APK Download",
     url: SITE_URL,
     description:
       "IV7 is the ultimate gaming platform. Download the IV7 app, play real cash games like Aviator Pro and Dragon Tiger, and earn referral rewards.",
@@ -155,6 +156,23 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#030308] text-gray-100 font-sans selection:bg-[#DF264D] selection:text-white">
         {children}
         <AgeNotice />
+        {/* Google Analytics (Placeholder) */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </body>
     </html>
   );

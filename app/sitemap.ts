@@ -10,13 +10,30 @@ const blogSlugs = [
   "latest-updates",
 ];
 
+const staticPages = [
+  "",
+  "/about",
+  "/licenses",
+  "/responsible-gaming",
+  "/faq"
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: BASE_URL,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1.0,
-    },
-  ];
+  const currentDate = new Date();
+
+  const staticEntries: MetadataRoute.Sitemap = staticPages.map((route) => ({
+    url: `${BASE_URL}${route}`,
+    lastModified: currentDate,
+    changeFrequency: route === "" ? "daily" : "monthly",
+    priority: route === "" ? 1.0 : 0.8,
+  }));
+
+  const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...blogEntries];
 }
