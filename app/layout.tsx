@@ -104,11 +104,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/favicon1.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.jpg", type: "image/jpeg" },
+      { url: "/favicon.jpg", type: "image/jpeg", sizes: "192x192" },
     ],
-    shortcut: "/favicon.png",
-    apple: "/favicon1.png",
+    shortcut: "/favicon.jpg",
+    apple: "/favicon.jpg",
   },
   manifest: "/manifest.json",
   other: {

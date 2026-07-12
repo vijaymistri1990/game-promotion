@@ -47,10 +47,10 @@ const SeoContent = () => {
         <div>
           <h3 className="text-lg font-bold text-gray-400 mb-3 font-mono">Stay Secure: Avoid Fake IV7 Downloads</h3>
           <p className="mb-3">
-            With the rising popularity of the <strong>IV7 Game</strong>, many third-party sites attempt to distribute fake or outdated versions of the app. To ensure your device's safety and to guarantee you receive your in-game rewards, always perform your <strong>IV7 Game APK download</strong> exclusively from our official website (iv7-s.com).
+            With the rising popularity of the <strong>IV7 Game</strong>, many third-party sites attempt to distribute fake or outdated versions of the app. To ensure your device's safety and to guarantee you receive your in-game rewards, always perform your <strong>IV7 Game APK download</strong> exclusively from our official website, <a href="https://iv7-s.com" className="text-[#DF264D] hover:underline font-bold">iv7-s.com</a>.
           </p>
           <p>
-            Experience the future of digital entertainment today. Download the IV7 App and join millions of players globally!
+            Experience the future of digital entertainment today on the official <a href="https://iv7-s.com" className="text-gray-300 hover:text-white underline">IV7-s.com</a> platform. Download the IV7 App and join millions of players globally!
           </p>
         </div>
       </div>

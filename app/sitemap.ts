@@ -15,7 +15,11 @@ const staticPages = [
   "/about",
   "/licenses",
   "/responsible-gaming",
-  "/faq"
+  "/faq",
+  "/contact",
+  "/disclaimer",
+  "/privacy-policy",
+  "/terms-conditions"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

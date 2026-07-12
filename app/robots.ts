@@ -11,8 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         // Blocking sensitive paths and api routes
         disallow: [
           "/api/",
-          "/_next/",
-          "/static/",
           "/admin/",
           "/checkout/",
           "/user/dashboard/"

@@ -3,8 +3,14 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   // Floating particles helper
   const particles = Array.from({ length: 20 });
 
@@ -30,8 +36,9 @@ export default function Hero() {
       </div>
 
       {/* Floating Particles Animation */}
-      <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-        {particles.map((_, i) => (
+      {mounted && (
+        <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+          {particles.map((_, i) => (
           <motion.div
             key={i}
             className="absolute rounded-full bg-neon-cyan/40"
@@ -55,6 +62,7 @@ export default function Hero() {
           />
         ))}
       </div>
+      )}
 
       {/* Main Content Area */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-16 text-center flex flex-col items-center">
@@ -85,6 +93,7 @@ export default function Hero() {
             src="/logo.png"
             alt="IV7 Game – Official Gaming Platform Logo"
             fill
+            sizes="(max-width: 768px) 288px, 420px"
             priority
             className="object-contain"
           />
